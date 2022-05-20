@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:fastion_ui/screens/product_screen.dart';
+import 'package:fastion_ui/screens/screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,10 +17,10 @@ class _splashscreenState extends State<splashscreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 10),
+    Timer(Duration(seconds: 3),
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context)=>
-                ProductScreen()
+                bottom()
             ))
     );
   }
